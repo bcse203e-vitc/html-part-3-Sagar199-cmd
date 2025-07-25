@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Form</title>
+</head>
+
+<body>
+    <h1>Health Survey Form</h1>
+    <form action="/login" method="post">
+        <label for="name">Full Name: </label>
+        <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+        <label for="age">Age: </label>
+        <input type="text" id="age" name="age" placeholder="Enter your age"><br><br>
+        <label for="gender">Gender :</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+        <label for="height">Height (in cm): </label>
+        <input type="text" id="height" name="height" placeholder="Enter your height"><br><br>
+        <label for="weight">Weight (in kg): </label>
+        <input type="text" id="weight" name="weight" placeholder="Enter your weight"><br><br>
+        <label>Lifestyle Questions: </label><br>
+        <label><input type="checkbox" name="lifestyle" value="Smoking"> Smoking</label>
+        <label><input type="checkbox" name="lifestyle" value="Alcohol"> Alcohol</label>
+        <label><input type="checkbox" name="lifestyle" value="Regular Exercise"> Regular Exercise</label>
+        <label><input type="checkbox" name="lifestyle" value="Healthy Diet"> Healthy Diet</label>
+        <br><br>
+        <label for="diet">Dietary preference: </label>
+        <select id="diet" name="diet-preferance">
+            <option value="Vegetarian">Vegetarian</option>
+            <option value="Non-Vegetarian">Non-Vegetarian</option>
+            <option value="Vegan">Vegan</option>
+        </select>
+        <br><br>
+        <label for="activity">Activity level: </label>
+        <select id="activity" name="activity-level">
+            <option value="Sedentary">Sedentary</option>
+            <option value="Moderate">Moderate</option>
+            <option value="Active">Active</option>
+        </select>
+        <br><br>
+        <label for="concerns">Health Concerns (Optional):</label><br>
+        <textarea id="concerns" name="concerns" rows="4" placeholder="Describe any health concerns..."></textarea>
+        <br><br>
+        <button type="submit">Submit Survey</button>
+    </form>
+    </body>
+
+</html>
