@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking Form</title>
+</head>
+
+<body>
+    <h1>Travel Booking Form</h1>
+    <form action="/submit" method="post">
+        <label for="fullname">Full Name: </label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name"><br><br>
+
+        <label for="contact">Contact Information: </label>
+        <input type="text" id="contact" name="contact" placeholder="Phone or Email"><br><br>
+
+        <label for="destination">Destination: </label>
+        <select id="destination" name="destination">
+            <option value="Paris">Paris</option>
+            <option value="New York">New York</option>
+            <option value="Tokyo">Tokyo</option>
+            <option value="Dubai">Dubai</option>
+            <option value="London">London</option>
+        </select><br><br>
+
+        <label for="dates">Travel Dates: </label>
+        <input type="date" id="dates" name="dates"><br><br>
+
+        <label for="travelers">Number of Travelers: </label>
+        <input type="number" id="travelers" name="travelers" value="1" min="1"><br><br>
+
+        <label>Travel Class: </label>
+        <input type="radio" id="economy" name="class" value="Economy">
+        <label for="economy">Economy</label>
+        <input type="radio" id="business" name="class" value="Business">
+        <label for="business">Business</label>
+        <input type="radio" id="first" name="class" value="First Class">
+        <label for="first">First Class</label><br><br>
+
+        <label><input type="checkbox" name="insurance" value="Yes"> Opt for Travel Insurance</label><br><br>
+
+        <label for="totalCost">Total Estimated Cost: </label>
+        <input type="text" id="totalCost" readonly placeholder="₹0"><br><br>
+
+        <button type="button">Calculate Cost</button><br><br>
+        <button type="submit">Book Now</button>
+    </form>
+</body>
+
+</html>
