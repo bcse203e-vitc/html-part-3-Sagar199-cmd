@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <h1>Registration Form for an Online Event</h1>
+    <form action="/login" method="post">
+        <label for="name">Full Name: </label>
+        <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+        <label for="phone">Phone Number: </label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your number"><br><br>
+        <label for="gender">Gender :</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+        <label for="age">Age Group: </label>
+        <select id="age" name="age-group">
+            <option value="18-25">18-25</option>
+            <option value="26-35">26-35</option>
+            <option value="35-55">35-55</option>
+            <option value="56-65">56-65</option>
+        </select>
+        <br><br>
+        <label for="check">Topics of Interest: </label><br>
+        <input type="checkbox" id="check" name="topic" value="python">
+        <label for="check">Python</label><br>
+        <input type="checkbox" id="check" name="topic" value="java">
+        <label for="check">Java</label><br>
+        <input type="checkbox" id="check" name="topic" value="c++">
+        <label for="check">C++</label><br>
+        <input type="checkbox" id="check" name="topic" value="javascript">
+        <label for="check">JavaScript</label><br>
+        <input type="checkbox" id="check" name="topic" value="react">
+        <label for="check">React</label><br>
+        <br><br>
+        <textarea name="comments" placeholder="Additional comments"></textarea>
+        <br><br>
+        <input type="submit" value="Register">
+    </form>
+    </body>
+
+</html>
